@@ -18,7 +18,7 @@ import {
 	FETCH_STUDENT_BY_ID_REQUEST,
 } from '../actions/studentActions';
 
-const STUDENTS_ENDPOINT = 'http://localhost:3001/students';
+const STUDENTS_ENDPOINT = 'https://my-json-server.typicode.com/gabarod/RN-SchoolSoftware/students';
 
 function* fetchStudents() {
 	try {
