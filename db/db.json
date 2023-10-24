@@ -1,0 +1,184 @@
+{
+  "rooms": [
+    {
+      "name": "Room 1",
+      "description": "Description for Room 1",
+      "id": 1
+    },
+    {
+      "name": "Room 2",
+      "description": "Description for Room 2",
+      "id": 2
+    },
+    {
+      "name": "Room 3",
+      "description": "Description for Room 3",
+      "id": 3
+    },
+    {
+      "name": "Room 4",
+      "description": "Description for Room 4",
+      "id": 4
+    },
+    {
+      "name": "Room 6",
+      "description": "Description for Room 6",
+      "id": 6
+    },
+    {
+      "name": "Room 7",
+      "description": "Description for Room 7",
+      "id": 7
+    },
+    {
+      "name": "Room 8",
+      "description": "Description for Room 8",
+      "id": 8
+    },
+    {
+      "name": "Room 9",
+      "description": "Description for Room 9",
+      "id": 9
+    },
+    {
+      "name": "Room 10",
+      "description": "Description for Room 10",
+      "id": 10
+    }
+  ],
+  "students": [
+    {
+      "name": "Student 1",
+      "age": 28,
+      "gender": "male",
+      "room_ids": [1, 7, 2, 6, 13],
+      "id": 1
+    },
+    {
+      "name": "Student 2",
+      "age": 20,
+      "gender": "Male",
+      "room_ids": [3, 4],
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Student 3",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [2]
+    },
+    {
+      "id": 4,
+      "name": "Student 4",
+      "age": 12,
+      "gender": "Male",
+      "room_ids": [2]
+    },
+    {
+      "name": "Student 5",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [3, 7],
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Student 6",
+      "age": 12,
+      "gender": "Male",
+      "room_ids": [3]
+    },
+    {
+      "id": 7,
+      "name": "Student 7",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [4]
+    },
+    {
+      "id": 8,
+      "name": "Student 8",
+      "age": 12,
+      "gender": "Male",
+      "room_ids": [4]
+    },
+    {
+      "id": 9,
+      "name": "Student 9",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [5]
+    },
+    {
+      "id": 10,
+      "name": "Student 10",
+      "age": 12,
+      "gender": "Male",
+      "room_ids": [5]
+    },
+    {
+      "id": 11,
+      "name": "Student 11",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [6]
+    },
+    {
+      "id": 12,
+      "name": "Student 12",
+      "age": 12,
+      "gender": "Male",
+      "room_ids": [6]
+    },
+    {
+      "id": 13,
+      "name": "Student 13",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [7]
+    },
+    {
+      "id": 14,
+      "name": "Student 14",
+      "age": 12,
+      "gender": "Male",
+      "room_ids": [7]
+    },
+    {
+      "id": 15,
+      "name": "Student 15",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [8]
+    },
+    {
+      "id": 16,
+      "name": "Student 16",
+      "age": 12,
+      "gender": "Male",
+      "room_ids": [8]
+    },
+    {
+      "id": 17,
+      "name": "Student 17",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [9]
+    },
+    {
+      "id": 19,
+      "name": "Student 19",
+      "age": 11,
+      "gender": "Female",
+      "room_ids": [10]
+    },
+    {
+      "id": 20,
+      "name": "Student 20",
+      "age": 12,
+      "gender": "Male",
+      "room_ids": [10]
+    }
+  ]
+}
