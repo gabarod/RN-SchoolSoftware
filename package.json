@@ -7,7 +7,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "server": "json-server --host localhost --watch db/db.json --port 3001",
+    "server": "json-server --host localhost --watch db.json --port 3001",
     "lint": "eslint . --ext .js,.jsx",
     "format": "prettier --write ."
   },
