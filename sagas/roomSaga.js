@@ -17,7 +17,8 @@ import {
 } from "../actions/roomActions";
 import { fetchStudentByIdRequest } from "../actions/studentActions";
 
-const ROOMS_ENDPOINT = "https://my-json-server.typicode.com/gabarod/RN-SchoolSoftware/rooms";
+const ROOMS_ENDPOINT =
+  "https://my-json-server.typicode.com/gabarod/RN-SchoolSoftware/rooms";
 
 function* fetchRoom(action) {
   try {

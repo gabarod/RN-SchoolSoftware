@@ -19,7 +19,6 @@ const UpdateRoom = ({ route, navigation }) => {
   const roomId = route?.params?.roomId;
   const dispatch = useDispatch();
   const rooms = useGetRooms();
-  const allStudents = useGetStudents();
   const isLoading = useSelector((state) => state.rooms.isLoading);
   const room = rooms.find((room) => room.id === parseInt(roomId));
 

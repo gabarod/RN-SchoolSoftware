@@ -28,6 +28,7 @@ const UpdateStudent = ({ route, navigation }) => {
   const student = students.find((s) => s.id === parseInt(studentId));
   const [selectedRooms, setSelectedRooms] = useState(student?.room_ids || []);
   const [selectedRoom, setSelectedRoom] = useState(null);
+  const [selectedGender, setSelectedGender] = useState(student?.gender || "");
 
   useEffect(() => {
     if (studentId && !student) {
@@ -35,12 +36,22 @@ const UpdateStudent = ({ route, navigation }) => {
     }
   }, [dispatch, studentId, student]);
 
+  useEffect(() => {
+    if (student) {
+      setSelectedGender(student.gender || "");
+      formik.setValues({
+        name: student.name || "",
+        age: String(student.age) || "",
+        gender: student.gender || "",
+      });
+    }
+  }, [student]);
+
   const genderOptions = [
-    { label: "Male", value: "male" },
-    { label: "Female", value: "female" },
+    { label: "Male", value: "Male" },
+    { label: "Female", value: "Female" },
     { label: "Other", value: "other" },
   ];
-
   const formik = useFormik({
     initialValues: {
       name: student?.name || "",
@@ -98,7 +109,6 @@ const UpdateStudent = ({ route, navigation }) => {
     ),
     [rooms, handleToggleRoom]
   );
-
   const renderHeader = useCallback(
     () => (
       <>
@@ -125,10 +135,13 @@ const UpdateStudent = ({ route, navigation }) => {
           <Text style={styles.errorText}>{formik.errors.age}</Text>
         ) : null}
         <RNPickerSelect
-          onValueChange={formik.handleChange("gender")}
+          onValueChange={(value) => {
+            setSelectedGender(value);
+            formik.setFieldValue("gender", value);
+          }}
           items={genderOptions}
           placeholder={{ label: "Select gender...", value: "" }}
-          value={formik.values.gender}
+          value={selectedGender}
           style={{
             ...pickerSelectStyles,
             iconContainer: {
@@ -143,7 +156,7 @@ const UpdateStudent = ({ route, navigation }) => {
         ) : null}
         <RNPickerSelect
           onValueChange={(value) => setSelectedRoom(value)}
-          items={rooms.map((room) => ({ label: room.name, value: room.id }))}
+          items={rooms.map((room) => ({ label: room.name, value: room.id, key: room.id }))}
           placeholder={{ label: "Select a room...", value: null }}
           value={selectedRoom}
           style={{
