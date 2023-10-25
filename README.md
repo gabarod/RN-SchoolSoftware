@@ -2,6 +2,8 @@
 
 RN School Software is a React Native and Expo-based project designed to streamline the management of students and classrooms in a school setting.
 
+![](demo.gif)
+
 ## Features
 
 - Student management
